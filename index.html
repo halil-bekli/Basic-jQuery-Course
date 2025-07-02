@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Web Project</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- jQuery -->
+    <!-- https://cdnjs.com/libraries/jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- jQuery UI -->
+
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Your Custom HTML Code Section -->
+        <section id="custom-code">
+            <h2>Custom HTML Code</h2>
+            <div class="code-container">
+                <!-- Write your custom HTML code below -->
+                
+                <div id="box1" class="box">1. KUTU</div>
+                <div id="box2" class="box">2. KUTU</div>
+                <button id="btnChangeColor">qQuery Color</button>
+                
+                <!-- End of csustom HTML code -->
+            </div>
+        </section>
+
+        <section id="home">
+            <h2>Home Section</h2>
+            <p>This is a basic web project using HTML, CSS, and JavaScript.</p>
+            <button id="changeColorBtn">Change Background Color</button>
+        </section>
+
+        <section id="about">
+            <h2>About Section</h2>
+            <p>This project demonstrates the integration of HTML, CSS, and JavaScript.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Section</h2>
+            <p>You can reach me at example@email.com</p>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Basic Web Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
