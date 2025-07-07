@@ -1,5 +1,5 @@
 // Wait for the DOM to be fully loaded
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMShow_hide_contentLoaded', function () {
     // Background color button functionality
     const changeColorBtn = document.getElementById('changeColorBtn');
     const body = document.body;
@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// ### CSS - EVENT ###
 $(document).ready(function () {
     $("#btnChangeColor").css("display", "inline-block");
     $("#btnChangeColor").click(function () {
@@ -55,3 +56,59 @@ $(document).ready(function () {
         $("#box2").css("border", "3px solid lightcoral");
     });
 }); // End of jQuery ready function
+
+// ### HTML ###
+$(document).ready(function () {
+    $("#html_button").click(function () {
+        $("#html_id").html("<p><b><mark>Changed Text</mark></b></p>");
+    });
+});
+
+// ### TEXT ###
+$(document).ready(function () {
+    $("#text_button").click(function () {
+        $("#html_id").html("<p>Changed Text</p>");
+    });
+});
+
+// ### ATTR ###
+$(document).ready(function () {
+    $("#attr_button").click(function () {
+        $("#attr_id").attr("href", "https://www.example.com");
+    });
+});
+
+// ### EFFECT ###
+$(document).ready(function () {
+    $("#effect_div").click(function () {
+        // effect
+        $("#effect_div").effect("bounce", "slow");
+
+        // animate
+        $("#effect_div").animate({ left: "300px" }).delay(2000);
+    });
+});
+
+// ### FADE ###
+$(document).ready(function () {
+    $("#fadeout_id").click(function () {
+        alert("Fade Out Button Clicked");
+        $("#fade_p_id").fadeOut("slow").delay(5000);
+    });
+
+    $("#fadein_id").click(function () {
+        alert("Fade In Button Clicked");
+        $("#fade_p_id").fadeIn("slow");
+    });
+});
+
+// ### SHOW - HIDE ###
+$(document).ready(function () {
+    $("#show_btn").click(function () {
+        $("#show_hide_content").show(1000);
+    });
+
+    $("#hide_btn").click(function () {
+        $("#show_hide_content").hide(1000);
+    });
+});
