@@ -112,3 +112,30 @@ $(document).ready(function () {
         $("#show_hide_content").hide(1000);
     });
 });
+
+// ### EVENTS ###
+$(document).ready(function () {
+    $("#event_id").click(function () {
+        alert("Event Button Clicked");
+    });
+});
+
+$(document).ready(function () {
+    $("#doubleclick_id").dblclick(function () {
+        alert("Double Click Event Triggered");
+    });
+});
+
+$(document).ready(function () {
+    $("#mouse_id").mouseup(function () {
+        alert("Mouse Up Event Triggered");
+        $(this).css("background-color", "lightblue");
+    });
+});
+
+$(document).ready(function () {
+    $("#keyboard_id").keydown(function (event) {
+        alert("Key Pressed: " + event.key);
+        $(this).css("background-color", "lightgreen");
+    });
+});
